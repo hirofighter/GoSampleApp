@@ -6,10 +6,12 @@ import (
 	"todo_app/app/models"
 )
 
+// サインアップ
 func signup(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
 		_, err := session(w, r)
 		if err != nil {
+			// サインアップ画面表示
 			generateHTML(w, nil, "layout", "public_navbar", "signup")
 		} else {
 			http.Redirect(w, r, "/todos", 302)

@@ -10,6 +10,7 @@ import (
 	"todo_app/config"
 )
 
+// 画面を表示するための処理
 func generateHTML(w http.ResponseWriter, data interface{}, filenames ...string) {
 	var files []string
 	for _, file := range filenames {
