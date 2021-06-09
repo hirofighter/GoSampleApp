@@ -974,3 +974,7 @@ net/http.(*conn).serve(0xc0001095e0, 0x45eb800, 0xc000020880)
 	/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go:1925 +0x8ad
 created by net/http.(*Server).Serve
 	/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go:2969 +0x36c
+2021/06/09 10:43:06 users.go:44: pq: SSL is not enabled on the server
+2021/06/09 10:56:30 users.go:44: pq: SSL is not enabled on the server
+2021/06/09 10:58:04 users.go:44: pq: SSL is not enabled on the server
+2021/06/09 11:01:50 users.go:44: pq: database "nakahashihiroki" does not exist
