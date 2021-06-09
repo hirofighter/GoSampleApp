@@ -84,6 +84,9 @@ func StartMainServer() error {
 	http.HandleFunc("/todos/delete/", parseURL(todoDelete))
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 
+	// sqlite3用
+	// return http.ListenAndServe(":"+config.Config.Port, nil)
+
 	// heroku Up用
 	port := os.Getenv("PORT")
 	return http.ListenAndServe(":"+port, nil)
